@@ -6,13 +6,12 @@ public class StrangeCounter {
         System.out.println(strangeCounter(37));
     }
 
-    public static long strangeCounter(long t) {
-        long reminder =t;
-        long cycle=3;
-        while (reminder>cycle){
-            reminder = reminder - cycle;
-            cycle = cycle*2;
+    public static long strangeCounter(long seconds) {
+        long range=3;
+        while (seconds>range){
+            seconds = seconds - range;
+            range = range*2;
         }
-        return cycle-reminder+1;
+        return range-seconds+1;
     }
 }
